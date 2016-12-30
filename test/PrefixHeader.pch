@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  test
+//
+//  Created by 张俊伟 on 2016/12/24.
+//  Copyright © 2016年 lanfairy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+
+#define INTERFACE_IDIOM_IS_PHONE ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+#define INTERFACE_IDIOM_IS_PAD   ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#endif /* PrefixHeader_pch */

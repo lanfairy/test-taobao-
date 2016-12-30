@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		454DF7C71E07761F0087C192 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DF7C61E07761F0087C192 /* CoreGraphics.framework */; };
+		454DF7C91E0777D60087C192 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DF7C81E0777D60087C192 /* UIKit.framework */; };
+		454DF7CB1E0777EB0087C192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454DF7CA1E0777EB0087C192 /* Foundation.framework */; };
+		D652BA6F1DFB90210095596F /* MBProgressHUD+LF.m in Sources */ = {isa = PBXBuildFile; fileRef = D652BA691DFB90210095596F /* MBProgressHUD+LF.m */; };
+		D652BA701DFB90210095596F /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D652BA6A1DFB90210095596F /* MBProgressHUD.bundle */; };
+		D652BA711DFB90210095596F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D652BA6C1DFB90210095596F /* MBProgressHUD.m */; };
+		D652BA721DFB90210095596F /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = D652BA6E1DFB90210095596F /* UIImage+animatedGIF.m */; };
+		D65E15AC1DFAEC16002CEF42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E15AB1DFAEC16002CEF42 /* main.m */; };
+		D65E15AF1DFAEC16002CEF42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E15AE1DFAEC16002CEF42 /* AppDelegate.m */; };
+		D65E15B21DFAEC16002CEF42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E15B11DFAEC16002CEF42 /* ViewController.m */; };
+		D65E15B51DFAEC16002CEF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65E15B31DFAEC16002CEF42 /* Main.storyboard */; };
+		D65E15B71DFAEC16002CEF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65E15B61DFAEC16002CEF42 /* Assets.xcassets */; };
+		D65E15BA1DFAEC16002CEF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65E15B81DFAEC16002CEF42 /* LaunchScreen.storyboard */; };
+		D662B9871E0E47E2003366A6 /* LFShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D662B9861E0E47E2003366A6 /* LFShareManager.m */; };
+		D67B3C151E0D6EEC005C4ECD /* AlibabaAuthExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C041E0D6EEC005C4ECD /* AlibabaAuthExt.framework */; };
+		D67B3C161E0D6EEC005C4ECD /* AlibabaAuthSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C051E0D6EEC005C4ECD /* AlibabaAuthSDK.framework */; };
+		D67B3C171E0D6EEC005C4ECD /* AlibcTradeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C061E0D6EEC005C4ECD /* AlibcTradeSDK.framework */; };
+		D67B3C181E0D6EEC005C4ECD /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C071E0D6EEC005C4ECD /* AlipaySDK.framework */; };
+		D67B3C191E0D6EEC005C4ECD /* OpenMtopExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C081E0D6EEC005C4ECD /* OpenMtopExt.framework */; };
+		D67B3C1A1E0D6EEC005C4ECD /* OpenMtopSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C091E0D6EEC005C4ECD /* OpenMtopSDK.framework */; };
+		D67B3C1B1E0D6EEC005C4ECD /* SecurityGuardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C0A1E0D6EEC005C4ECD /* SecurityGuardSDK.framework */; };
+		D67B3C1C1E0D6EEC005C4ECD /* SGMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C0B1E0D6EEC005C4ECD /* SGMain.framework */; };
+		D67B3C1D1E0D6EEC005C4ECD /* SGNoCaptcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C0C1E0D6EEC005C4ECD /* SGNoCaptcha.framework */; };
+		D67B3C1E1E0D6EEC005C4ECD /* SGSecurityBody.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C0D1E0D6EEC005C4ECD /* SGSecurityBody.framework */; };
+		D67B3C1F1E0D6EEC005C4ECD /* TBAppLinkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C0E1E0D6EEC005C4ECD /* TBAppLinkSDK.framework */; };
+		D67B3C201E0D6EEC005C4ECD /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C0F1E0D6EEC005C4ECD /* UTDID.framework */; };
+		D67B3C211E0D6EEC005C4ECD /* UTMini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C101E0D6EEC005C4ECD /* UTMini.framework */; };
+		D67B3C221E0D6EEC005C4ECD /* AlibabaAuthSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D67B3C121E0D6EEC005C4ECD /* AlibabaAuthSDK.bundle */; };
+		D67B3C231E0D6EEC005C4ECD /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D67B3C131E0D6EEC005C4ECD /* AlipaySDK.bundle */; };
+		D67B3C241E0D6EEC005C4ECD /* NBResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D67B3C141E0D6EEC005C4ECD /* NBResource.bundle */; };
+		D67B3C261E0D7D7F005C4ECD /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D67B3C251E0D7D7F005C4ECD /* yw_1222.jpg */; };
+		D67B3C281E0D7E5F005C4ECD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C271E0D7E5F005C4ECD /* libc++.tbd */; };
+		D67B3C2A1E0D7E79005C4ECD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C291E0D7E79005C4ECD /* CoreMotion.framework */; };
+		D67B3C2C1E0D7F36005C4ECD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D67B3C2B1E0D7F36005C4ECD /* libsqlite3.tbd */; };
+		D6AEF43B1E04D0F5001AB97E /* jcore-ios-1.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF4381E04D0F5001AB97E /* jcore-ios-1.0.0.a */; };
+		D6AEF43C1E04D0F5001AB97E /* jpush-ios-3.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF4391E04D0F5001AB97E /* jpush-ios-3.0.0.a */; };
+		D6AEF43F1E04D11B001AB97E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF43E1E04D11B001AB97E /* CFNetwork.framework */; };
+		D6AEF4411E04D135001AB97E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF4401E04D135001AB97E /* CoreFoundation.framework */; };
+		D6AEF4431E04D144001AB97E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF4421E04D144001AB97E /* CoreTelephony.framework */; };
+		D6AEF4451E04D155001AB97E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF4441E04D155001AB97E /* SystemConfiguration.framework */; };
+		D6AEF4471E04D16E001AB97E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF4461E04D16E001AB97E /* Security.framework */; };
+		D6AEF4491E04D184001AB97E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF4481E04D184001AB97E /* libz.tbd */; };
+		D6AEF44B1E04D1C6001AB97E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF44A1E04D1C6001AB97E /* UserNotifications.framework */; };
+		D6AEF44D1E04D35B001AB97E /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AEF44C1E04D35B001AB97E /* libresolv.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		454DF7C61E07761F0087C192 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		454DF7C81E0777D60087C192 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		454DF7CA1E0777EB0087C192 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D652BA681DFB90210095596F /* MBProgressHUD+LF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+LF.h"; sourceTree = "<group>"; };
+		D652BA691DFB90210095596F /* MBProgressHUD+LF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+LF.m"; sourceTree = "<group>"; };
+		D652BA6A1DFB90210095596F /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		D652BA6B1DFB90210095596F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D652BA6C1DFB90210095596F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D652BA6D1DFB90210095596F /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		D652BA6E1DFB90210095596F /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		D65E15A71DFAEC15002CEF42 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65E15AB1DFAEC16002CEF42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D65E15AD1DFAEC16002CEF42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D65E15AE1DFAEC16002CEF42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D65E15B01DFAEC16002CEF42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D65E15B11DFAEC16002CEF42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D65E15B41DFAEC16002CEF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D65E15B61DFAEC16002CEF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D65E15B91DFAEC16002CEF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D65E15BB1DFAEC16002CEF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D662B9851E0E47E2003366A6 /* LFShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFShareManager.h; sourceTree = "<group>"; };
+		D662B9861E0E47E2003366A6 /* LFShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFShareManager.m; sourceTree = "<group>"; };
+		D662B9881E0E5D8D003366A6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D67B3C041E0D6EEC005C4ECD /* AlibabaAuthExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlibabaAuthExt.framework; sourceTree = "<group>"; };
+		D67B3C051E0D6EEC005C4ECD /* AlibabaAuthSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlibabaAuthSDK.framework; sourceTree = "<group>"; };
+		D67B3C061E0D6EEC005C4ECD /* AlibcTradeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlibcTradeSDK.framework; sourceTree = "<group>"; };
+		D67B3C071E0D6EEC005C4ECD /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		D67B3C081E0D6EEC005C4ECD /* OpenMtopExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenMtopExt.framework; sourceTree = "<group>"; };
+		D67B3C091E0D6EEC005C4ECD /* OpenMtopSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenMtopSDK.framework; sourceTree = "<group>"; };
+		D67B3C0A1E0D6EEC005C4ECD /* SecurityGuardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecurityGuardSDK.framework; sourceTree = "<group>"; };
+		D67B3C0B1E0D6EEC005C4ECD /* SGMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGMain.framework; sourceTree = "<group>"; };
+		D67B3C0C1E0D6EEC005C4ECD /* SGNoCaptcha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGNoCaptcha.framework; sourceTree = "<group>"; };
+		D67B3C0D1E0D6EEC005C4ECD /* SGSecurityBody.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGSecurityBody.framework; sourceTree = "<group>"; };
+		D67B3C0E1E0D6EEC005C4ECD /* TBAppLinkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TBAppLinkSDK.framework; sourceTree = "<group>"; };
+		D67B3C0F1E0D6EEC005C4ECD /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
+		D67B3C101E0D6EEC005C4ECD /* UTMini.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTMini.framework; sourceTree = "<group>"; };
+		D67B3C121E0D6EEC005C4ECD /* AlibabaAuthSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlibabaAuthSDK.bundle; sourceTree = "<group>"; };
+		D67B3C131E0D6EEC005C4ECD /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		D67B3C141E0D6EEC005C4ECD /* NBResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NBResource.bundle; sourceTree = "<group>"; };
+		D67B3C251E0D7D7F005C4ECD /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		D67B3C271E0D7E5F005C4ECD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D67B3C291E0D7E79005C4ECD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D67B3C2B1E0D7F36005C4ECD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D6A8AC5A1DFEE82500CEF122 /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
+		D6AEF4381E04D0F5001AB97E /* jcore-ios-1.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-1.0.0.a"; sourceTree = "<group>"; };
+		D6AEF4391E04D0F5001AB97E /* jpush-ios-3.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.0.0.a"; sourceTree = "<group>"; };
+		D6AEF43A1E04D0F5001AB97E /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		D6AEF43E1E04D11B001AB97E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D6AEF4401E04D135001AB97E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D6AEF4421E04D144001AB97E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D6AEF4441E04D155001AB97E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D6AEF4461E04D16E001AB97E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D6AEF4481E04D184001AB97E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D6AEF44A1E04D1C6001AB97E /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D6AEF44C1E04D35B001AB97E /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D65E15A41DFAEC15002CEF42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B3C2C1E0D7F36005C4ECD /* libsqlite3.tbd in Frameworks */,
+				D6AEF4451E04D155001AB97E /* SystemConfiguration.framework in Frameworks */,
+				D6AEF4431E04D144001AB97E /* CoreTelephony.framework in Frameworks */,
+				D6AEF43F1E04D11B001AB97E /* CFNetwork.framework in Frameworks */,
+				D67B3C2A1E0D7E79005C4ECD /* CoreMotion.framework in Frameworks */,
+				D6AEF4471E04D16E001AB97E /* Security.framework in Frameworks */,
+				D67B3C281E0D7E5F005C4ECD /* libc++.tbd in Frameworks */,
+				D6AEF4491E04D184001AB97E /* libz.tbd in Frameworks */,
+				D67B3C171E0D6EEC005C4ECD /* AlibcTradeSDK.framework in Frameworks */,
+				454DF7CB1E0777EB0087C192 /* Foundation.framework in Frameworks */,
+				D67B3C181E0D6EEC005C4ECD /* AlipaySDK.framework in Frameworks */,
+				D67B3C1C1E0D6EEC005C4ECD /* SGMain.framework in Frameworks */,
+				454DF7C91E0777D60087C192 /* UIKit.framework in Frameworks */,
+				454DF7C71E07761F0087C192 /* CoreGraphics.framework in Frameworks */,
+				D67B3C1D1E0D6EEC005C4ECD /* SGNoCaptcha.framework in Frameworks */,
+				D6AEF44D1E04D35B001AB97E /* libresolv.tbd in Frameworks */,
+				D67B3C201E0D6EEC005C4ECD /* UTDID.framework in Frameworks */,
+				D6AEF44B1E04D1C6001AB97E /* UserNotifications.framework in Frameworks */,
+				D67B3C1F1E0D6EEC005C4ECD /* TBAppLinkSDK.framework in Frameworks */,
+				D67B3C161E0D6EEC005C4ECD /* AlibabaAuthSDK.framework in Frameworks */,
+				D67B3C211E0D6EEC005C4ECD /* UTMini.framework in Frameworks */,
+				D67B3C191E0D6EEC005C4ECD /* OpenMtopExt.framework in Frameworks */,
+				D67B3C151E0D6EEC005C4ECD /* AlibabaAuthExt.framework in Frameworks */,
+				D6AEF4411E04D135001AB97E /* CoreFoundation.framework in Frameworks */,
+				D67B3C1A1E0D6EEC005C4ECD /* OpenMtopSDK.framework in Frameworks */,
+				D67B3C1E1E0D6EEC005C4ECD /* SGSecurityBody.framework in Frameworks */,
+				D6AEF43C1E04D0F5001AB97E /* jpush-ios-3.0.0.a in Frameworks */,
+				D6AEF43B1E04D0F5001AB97E /* jcore-ios-1.0.0.a in Frameworks */,
+				D67B3C1B1E0D6EEC005C4ECD /* SecurityGuardSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D652BA671DFB90210095596F /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D652BA681DFB90210095596F /* MBProgressHUD+LF.h */,
+				D652BA691DFB90210095596F /* MBProgressHUD+LF.m */,
+				D652BA6A1DFB90210095596F /* MBProgressHUD.bundle */,
+				D652BA6B1DFB90210095596F /* MBProgressHUD.h */,
+				D652BA6C1DFB90210095596F /* MBProgressHUD.m */,
+				D652BA6D1DFB90210095596F /* UIImage+animatedGIF.h */,
+				D652BA6E1DFB90210095596F /* UIImage+animatedGIF.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		D65E159E1DFAEC15002CEF42 = {
+			isa = PBXGroup;
+			children = (
+				D67B3C031E0D6EEC005C4ECD /* Frameworks */,
+				D67B3C111E0D6EEC005C4ECD /* Resources */,
+				D6AEF4371E04D0F5001AB97E /* Lib */,
+				D652BA671DFB90210095596F /* MBProgressHUD */,
+				D65E15A91DFAEC15002CEF42 /* test */,
+				D65E15A81DFAEC15002CEF42 /* Products */,
+				D6AEF43D1E04D11B001AB97E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D65E15A81DFAEC15002CEF42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15A71DFAEC15002CEF42 /* test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D65E15A91DFAEC15002CEF42 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				D67B3C251E0D7D7F005C4ECD /* yw_1222.jpg */,
+				D6A8AC5A1DFEE82500CEF122 /* test.entitlements */,
+				D65E15AD1DFAEC16002CEF42 /* AppDelegate.h */,
+				D65E15AE1DFAEC16002CEF42 /* AppDelegate.m */,
+				D65E15B01DFAEC16002CEF42 /* ViewController.h */,
+				D65E15B11DFAEC16002CEF42 /* ViewController.m */,
+				D662B9851E0E47E2003366A6 /* LFShareManager.h */,
+				D662B9861E0E47E2003366A6 /* LFShareManager.m */,
+				D65E15B31DFAEC16002CEF42 /* Main.storyboard */,
+				D65E15B61DFAEC16002CEF42 /* Assets.xcassets */,
+				D65E15B81DFAEC16002CEF42 /* LaunchScreen.storyboard */,
+				D65E15BB1DFAEC16002CEF42 /* Info.plist */,
+				D65E15AA1DFAEC15002CEF42 /* Supporting Files */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		D65E15AA1DFAEC15002CEF42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15AB1DFAEC16002CEF42 /* main.m */,
+				D662B9881E0E5D8D003366A6 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D67B3C031E0D6EEC005C4ECD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D67B3C2B1E0D7F36005C4ECD /* libsqlite3.tbd */,
+				D67B3C291E0D7E79005C4ECD /* CoreMotion.framework */,
+				D67B3C271E0D7E5F005C4ECD /* libc++.tbd */,
+				D67B3C041E0D6EEC005C4ECD /* AlibabaAuthExt.framework */,
+				D67B3C051E0D6EEC005C4ECD /* AlibabaAuthSDK.framework */,
+				D67B3C061E0D6EEC005C4ECD /* AlibcTradeSDK.framework */,
+				D67B3C071E0D6EEC005C4ECD /* AlipaySDK.framework */,
+				D67B3C081E0D6EEC005C4ECD /* OpenMtopExt.framework */,
+				D67B3C091E0D6EEC005C4ECD /* OpenMtopSDK.framework */,
+				D67B3C0A1E0D6EEC005C4ECD /* SecurityGuardSDK.framework */,
+				D67B3C0B1E0D6EEC005C4ECD /* SGMain.framework */,
+				D67B3C0C1E0D6EEC005C4ECD /* SGNoCaptcha.framework */,
+				D67B3C0D1E0D6EEC005C4ECD /* SGSecurityBody.framework */,
+				D67B3C0E1E0D6EEC005C4ECD /* TBAppLinkSDK.framework */,
+				D67B3C0F1E0D6EEC005C4ECD /* UTDID.framework */,
+				D67B3C101E0D6EEC005C4ECD /* UTMini.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		D67B3C111E0D6EEC005C4ECD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D67B3C121E0D6EEC005C4ECD /* AlibabaAuthSDK.bundle */,
+				D67B3C131E0D6EEC005C4ECD /* AlipaySDK.bundle */,
+				D67B3C141E0D6EEC005C4ECD /* NBResource.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D6AEF4371E04D0F5001AB97E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D6AEF4381E04D0F5001AB97E /* jcore-ios-1.0.0.a */,
+				D6AEF4391E04D0F5001AB97E /* jpush-ios-3.0.0.a */,
+				D6AEF43A1E04D0F5001AB97E /* JPUSHService.h */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D6AEF43D1E04D11B001AB97E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				454DF7CA1E0777EB0087C192 /* Foundation.framework */,
+				454DF7C81E0777D60087C192 /* UIKit.framework */,
+				454DF7C61E07761F0087C192 /* CoreGraphics.framework */,
+				D6AEF44C1E04D35B001AB97E /* libresolv.tbd */,
+				D6AEF44A1E04D1C6001AB97E /* UserNotifications.framework */,
+				D6AEF4481E04D184001AB97E /* libz.tbd */,
+				D6AEF4461E04D16E001AB97E /* Security.framework */,
+				D6AEF4441E04D155001AB97E /* SystemConfiguration.framework */,
+				D6AEF4421E04D144001AB97E /* CoreTelephony.framework */,
+				D6AEF4401E04D135001AB97E /* CoreFoundation.framework */,
+				D6AEF43E1E04D11B001AB97E /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D65E15A61DFAEC15002CEF42 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65E15BE1DFAEC16002CEF42 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				D65E15A31DFAEC15002CEF42 /* Sources */,
+				D65E15A41DFAEC15002CEF42 /* Frameworks */,
+				D65E15A51DFAEC15002CEF42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = D65E15A71DFAEC15002CEF42 /* test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D65E159F1DFAEC15002CEF42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = lanfairy;
+				TargetAttributes = {
+					D65E15A61DFAEC15002CEF42 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3JNE23LZ6;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D65E15A21DFAEC15002CEF42 /* Build configuration list for PBXProject "test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D65E159E1DFAEC15002CEF42;
+			productRefGroup = D65E15A81DFAEC15002CEF42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65E15A61DFAEC15002CEF42 /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D65E15A51DFAEC15002CEF42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B3C261E0D7D7F005C4ECD /* yw_1222.jpg in Resources */,
+				D67B3C241E0D6EEC005C4ECD /* NBResource.bundle in Resources */,
+				D67B3C231E0D6EEC005C4ECD /* AlipaySDK.bundle in Resources */,
+				D65E15BA1DFAEC16002CEF42 /* LaunchScreen.storyboard in Resources */,
+				D67B3C221E0D6EEC005C4ECD /* AlibabaAuthSDK.bundle in Resources */,
+				D652BA701DFB90210095596F /* MBProgressHUD.bundle in Resources */,
+				D65E15B71DFAEC16002CEF42 /* Assets.xcassets in Resources */,
+				D65E15B51DFAEC16002CEF42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D65E15A31DFAEC15002CEF42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65E15B21DFAEC16002CEF42 /* ViewController.m in Sources */,
+				D662B9871E0E47E2003366A6 /* LFShareManager.m in Sources */,
+				D652BA721DFB90210095596F /* UIImage+animatedGIF.m in Sources */,
+				D65E15AF1DFAEC16002CEF42 /* AppDelegate.m in Sources */,
+				D652BA711DFB90210095596F /* MBProgressHUD.m in Sources */,
+				D65E15AC1DFAEC16002CEF42 /* main.m in Sources */,
+				D652BA6F1DFB90210095596F /* MBProgressHUD+LF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D65E15B31DFAEC16002CEF42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D65E15B41DFAEC16002CEF42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D65E15B81DFAEC16002CEF42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D65E15B91DFAEC16002CEF42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D65E15BC1DFAEC16002CEF42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D65E15BD1DFAEC16002CEF42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D65E15BF1DFAEC16002CEF42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = V3JNE23LZ6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = test/PrefixHeader.pch;
+				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-Istdc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanfairy.xiaofupoyouhuiquan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D65E15C01DFAEC16002CEF42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = V3JNE23LZ6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREFIX_HEADER = test/PrefixHeader.pch;
+				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Istdc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanfairy.xiaofupoyouhuiquan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D65E15A21DFAEC15002CEF42 /* Build configuration list for PBXProject "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65E15BC1DFAEC16002CEF42 /* Debug */,
+				D65E15BD1DFAEC16002CEF42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65E15BE1DFAEC16002CEF42 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65E15BF1DFAEC16002CEF42 /* Debug */,
+				D65E15C01DFAEC16002CEF42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D65E159F1DFAEC15002CEF42 /* Project object */;
+}
